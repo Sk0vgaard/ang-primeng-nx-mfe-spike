@@ -81,7 +81,7 @@
       "executor": "@nx/web:file-server",
       "options": {
         "buildTarget": "search:build",
-        "port": 4200,
+        "port": 4201,
         "staticFilePath": "dist/apps/search/browser",
         "spa": true
       }

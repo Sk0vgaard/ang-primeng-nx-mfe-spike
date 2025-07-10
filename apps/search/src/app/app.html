@@ -1,2 +1,22 @@
-SEARCH
-<router-outlet></router-outlet>
+<h2>Search</h2>
+
+<div class="grid">
+  <div class="col-2">
+    <div class="box">
+      <p-panel header="Search">
+        <input type="text" pinputtext [(ngModel)]="searchText" (change)="onSearchChange($event)">
+      </p-panel>
+    </div>
+  </div>
+  <div class="col-10">
+    <div class="grid">
+      @for (pokemon of pokemon; track pokemon.name) {
+      <div class="col-2">
+        <p-panel [header]="pokemon.name.english" [className]="'shadow-5 border-blue-700 p-5'">
+          <img [alt]="pokemon.name.english" [src]="pokemon.image">
+        </p-panel>
+      </div>
+      }
+    </div>
+  </div>
+</div>

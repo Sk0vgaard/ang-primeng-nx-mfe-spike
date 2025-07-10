@@ -66,5 +66,21 @@
       "style": "scss",
       "unitTestRunner": "jest"
     }
+  },
+  "projects": {
+    "search": {
+      "tags": []
+    },
+    "search-e2e": {
+      "tags": [],
+      "implicitDependencies": ["search"]
+    },
+    "home": {
+      "tags": []
+    },
+    "home-e2e": {
+      "tags": [],
+      "implicitDependencies": ["home"]
+    }
   }
 }

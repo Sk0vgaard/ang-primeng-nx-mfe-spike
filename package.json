@@ -2,7 +2,10 @@
   "name": "@ang-primeng-nx-mfe-spike/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "home": "nx serve home --port=4200",
+    "search": "nx serve search --port=4201"
+  },
   "private": true,
   "dependencies": {
     "@angular/common": "~20.0.0",
