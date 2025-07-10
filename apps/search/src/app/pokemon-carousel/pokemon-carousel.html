@@ -1,7 +1,6 @@
-Test 
-<div class="max-w-min">
+<div class="max-w-min mx-auto">
     @if (images.length > 0) {
-        <p-carousel [value]="images" [numVisible]="3" [numScroll]="1" [circular]="true" [autoplayInterval]="3000">
+        <p-carousel [value]="images" [numVisible]="3" [numScroll]="2" [circular]="true" [autoplayInterval]="3000">
             <ng-template let-item pTemplate="item">
                 <h2 [innerHTML]="item.name" class="text-center"></h2>
                 <img [src]="item.image" [alt]="item.name" class="w-full h-auto">
