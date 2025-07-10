@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { InputTextModule } from 'primeng/inputtext';
 import { PanelModule } from 'primeng/panel';
+import { PokemonCarousel } from "./pokemon-carousel/pokemon-carousel";
 
 interface Pokemon {
   name: {
@@ -19,7 +20,8 @@ interface Pokemon {
     InputTextModule,
     FormsModule,
     CommonModule,
-  ],
+    PokemonCarousel
+],
   selector: 'app-root',
   templateUrl: './app.html',
   styleUrl: './app.scss',

@@ -1,5 +1,7 @@
 <h2>Search</h2>
 
+<app-pokemon-carousel></app-pokemon-carousel>
+
 <div class="grid">
   <div class="col-2">
     <div class="box">
@@ -11,9 +13,9 @@
   <div class="col-10">
     <div class="grid">
       @for (pokemon of pokemon; track pokemon.name) {
-      <div class="col-2">
+      <div class="col-12 sm:col-6 md:col-4 lg:col-3 xl:col-3">
         <p-panel [header]="pokemon.name.english" [className]="'shadow-5 border-blue-700 p-5'">
-          <img [alt]="pokemon.name.english" [src]="pokemon.image">
+          <img [alt]="pokemon.name.english" [src]="pokemon.image" style="width: 100%; object-fit: contain;">
         </p-panel>
       </div>
       }
