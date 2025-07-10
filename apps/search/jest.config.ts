@@ -1,8 +1,8 @@
 export default {
-  displayName: 'ang-primeng-nx-mfe-spike',
+  displayName: 'search',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../coverage/apps/ang-primeng-nx-mfe-spike',
+  coverageDirectory: '../../coverage/apps/search',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',
